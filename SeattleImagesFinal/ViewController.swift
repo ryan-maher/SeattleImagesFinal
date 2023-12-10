@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("SeattleImagesTableViewCell", owner: self)?.first as! SeattleImagesTableViewCell
-        cell.imageView?.image = UIImage(named: "Seattle\(indexPath.row)")
+        cell.imageView?.image = UIImage(named: "Seattle\(indexPath.row+1)")
         cell.lblSeattleImage.text = arr[indexPath.row]
         return cell
     }
